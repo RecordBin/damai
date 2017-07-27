@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册--大麦</title>
+		<link href="img/logo1_01.ico" type="image/x-icon" rel="shortcut icon" />
+		<link rel="stylesheet" href="css/register.css" />
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/register.js" ></script>
+	</head>
+	<body>
+		<div id="box">
+			<div id="logo">
+				<img src="img/logo.png" id="logimg">
+				<h1 id="header_title">账户注册</h1>
+				<button id="logobtn1"><a href="">English</a></button>
+			</div>
+			<!--表单验证-->
+			<form id="formbox" action="damai.html">
+			<div id="regBox">				
+				<div class="regtextbox1" id="phone">
+					<img src="img/icon_bg_01.jpg" class="regimg">					
+					<script src="js/jquery.phone.js" type="text/javascript" charset="utf-8"></script>
+					<script type="text/javascript">
+						$(function(){
+							$("#regselect").showCountry("🇨🇳中国＋86");	
+						})
+		            </script>
+					<input type="text" id="phonetxt"  name="phone" placeholder="请输入手机号">
+					<select id="regselect"></select>
+				</div><span id="sp1" class="state1"></span>
+				
+				<div class="regtextbox1" id="pswd">
+					<img src="img/icon_bg_03.jpg" class="regimg">
+					<input type="password" id="pswdtxt" name="password" placeholder="登录密码">
+				</div><span id="sp2" class="state1"></span>
+				
+				<div class="regtextbox1" id="repswd">
+					<img src="img/icon_bg_03.jpg" class="regimg">
+					<input type="password" id="repswdtxt" name="repassword" placeholder="确认登录密码">
+				</div><span id="sp3" class="state1"></span>
+				
+				<div class="regtextbox2" id="setnum">
+					<img src="img/icon_bg_05.jpg" class="regimg">
+					<input type="text" id="setnumtxt" name="setnum" placeholder="请输入验证码">
+				</div><span id="sp4" class="state1"></span>
+				
+				<div class="regtextbox2" id="msg">
+					<img src="img/icon_bg_07.jpg" class="regimg">
+					<input type="text" id="msgtxt" name="msg" placeholder="请输入短信验证码">				
+				</div><span id="sp5" class="state1"></span>
+				<div id="getmsg">获取验证码</div>
+				<img src="img/imgs_03.jpg" id="numimg">
+				<div id="numa"><a href="">换一换</a></div>
+				<input type="submit" class="regtextbox1" id="btnsure" value="立即注册" >
+				<a href="" id="agree"><input type="checkbox"/>我已经阅读并同意《大麦网会员服务条款》</a>
+			</div>
+			</form>
+			<!--表单结束-->
+			
+			<div id="footer">
+				<div id="foot1">
+					<ul>
+						<li><a href="#">公司介绍</a></li>
+						<li><a href="#">品牌识别</a></li>
+						<li><a href="#">企业荣誉</a></li>
+						<li><a href="#">联系方式</a></li>
+						<li><a href="#">隐私声明</a></li>
+						<li><a href="#">合作招商</a></li>
+						<li><a href="#">招聘信息</a></li>
+						<li><a href="#">网站地图</a></li>
+						<li><a href="#">友情链接</a></li>
+					</ul>
+				</div>
+				<div id="foot2">
+					<ul id="lowul1">
+						<li><a href="#">京ICP证031057号</a></li>
+						<li><a href="#">京ICP备11043884号</a></li>
+						<li><a href="#"><img src="img/police.png">京公网安备11010102000430号</a></li>
+						<li><a href="#">广播电视节目制作经营许可证 (京)字第02253号</a></li>
+					</ul>
+					
+					<ul id="lowul2">
+						<li><a href="#">网络文化经营许可证 京网文[2016]3438-413号</a></li>
+						<li><a href="#">营业性演出许可证 京市演587号</a></li>
+					</ul>
+					
+					<ul id="lowul3">
+						<li>北京红马传媒文化发展有限公司 版权所有 <a href="#">大麦网</a> Copyright 2003-2016 All Rights Reserved</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
